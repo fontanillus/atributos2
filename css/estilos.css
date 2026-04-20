@@ -1,0 +1,154 @@
+body {
+  font-family: Nunito, 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e4e6ea;
+  color: #222;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 1rem;
+}
+
+header {
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.posicion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 1.2rem 0 2rem;
+}
+
+.boton,
+button {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(181, 12, 12);
+  background-color: white;
+  padding: 0.75rem 1.4rem;
+  border: 2px solid rgb(181, 12, 12);
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.boton:hover,
+button:hover {
+  background-color: rgb(181, 12, 12);
+  color: white;
+  transform: translateY(-1px);
+}
+
+h1 {
+  color: #5f8ec2;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  margin: 0;
+}
+
+.contenedor {
+  background: transparent;
+  padding: 0 1.25rem 1.5rem;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.75;
+  margin: 0;
+}
+
+h2,
+h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  background-color: rgb(181, 12, 12);
+  color: white;
+  text-align: center;
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  font-size: clamp(1.4rem, 2.4vw, 2rem);
+}
+
+h3 {
+  color: #5f8ec2;
+  text-shadow: black 0px 0px 0.4px;
+  font-size: clamp(1.35rem, 2vw, 1.7rem);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 0.85rem;
+}
+
+ul li::before {
+  content: "★ ";
+  color: #f4a261;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+a {
+  color: #1d4f91;
+}
+
+a:hover {
+  color: #b50c0c;
+}
+
+ul li:hover::before {
+  color: #2a9d8f;
+}
+
+.caja1 {
+  background-color: white;
+  color: black;
+  margin: 2rem auto;
+  padding: 1.25rem;
+  border-radius: 12px;
+  border: 2px solid black;
+  border-bottom-color: rgb(211, 32, 32);
+  max-width: 100%;
+}
+
+a[href^="mailto"]::after {
+  content: url(../img/sobre.png);
+}
+
+a[href^="tel"]::before {
+  content: url(../img/telefono.png);
+}
+
+a[target="_blank"]::after {
+  content: url(../img/abrir.png);
+}
+
+@media (max-width: 768px) {
+  .contenedor {
+    padding: 1rem;
+  }
+
+  .posicion {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .boton,
+  button {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+    
